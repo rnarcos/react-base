@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {},
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^5.27.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rnarcos/react-base.git"
