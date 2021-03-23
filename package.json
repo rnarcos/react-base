@@ -5,7 +5,9 @@
   "author": "Marcos Fernandes",
   "license": "MIT",
   "scripts": {},
-  "dependencies": {},
+  "dependencies": {
+    "eslint-plugin-node": "^11.1.0"
+  },
   "devDependencies": {
     "eslint": "^7.12.1",
     "eslint-config-standard": "^16.0.2",
