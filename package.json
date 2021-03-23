@@ -7,7 +7,8 @@
   "scripts": {},
   "dependencies": {},
   "devDependencies": {
-    "webpack": "^5.27.2"
+    "webpack": "^5.27.2",
+    "webpack-cli": "^4.5.0"
   },
   "repository": {
     "type": "git",
