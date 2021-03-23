@@ -8,6 +8,7 @@
   "dependencies": {},
   "devDependencies": {
     "eslint": "^7.22.0",
+    "eslint-config-standard": "^16.0.2",
     "eslint-plugin-react": "^7.22.0"
   },
   "repository": {
