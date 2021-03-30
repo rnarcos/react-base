@@ -4,7 +4,12 @@
   "description": "A basic setup for new ReactJS projects.",
   "author": "Marcos Fernandes",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start:dev": "webpack serve --open --config ./webpack.dev.js",
+    "start:prod": "webpack serve --open --config ./webpack.prod.js",
+    "build:dev": "webpack --config ./webpack.dev.js",
+    "build:prod": "webpack --config ./webpack.prod.js"
+  },
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
