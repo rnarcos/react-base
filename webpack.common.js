@@ -10,7 +10,7 @@ module.exports = {
   },
   entry: {
     app: [path.resolve(__dirname, 'src', 'index.js')],
-    vendors: ['react', 'react-dom'],
+    vendors: ['react', 'react-dom', 'redux', 'react-redux'],
   },
   output: {
     filename: '[name].[contenthash].js',
