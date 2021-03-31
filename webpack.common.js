@@ -1,15 +1,16 @@
 const path = require('path');
 const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const ForkTSCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'none',
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.ts', '.tsx'],
   },
   entry: {
-    app: [path.resolve(__dirname, 'src', 'index.js')],
+    app: [path.resolve(__dirname, 'src', 'index.tsx')],
     vendors: ['react', 'react-dom'],
   },
   output: {
@@ -19,7 +20,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js(x)?$/,
+        test: /\.ts(x)?$/,
         use: 'babel-loader',
       },
     ],
@@ -29,6 +30,7 @@ module.exports = {
       process: 'process/browser',
     }),
     new CleanWebpackPlugin(),
+    new ForkTSCheckerWebpackPlugin(),
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'public', 'index.html'),
     }),
